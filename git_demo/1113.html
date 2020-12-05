@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1113</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    .bg{
+        width: 1440px;
+        height: 1440px;
+        background: #2222 url("https://picsum.photos/id/652/500/400") no-repeat center;
+        background-size: cover;
+    }
+    .bg_blur{
+        background: #2222 url("https://picsum.photos/id/652/500/400") no-repeat center;
+        background-size: cover;
+        filter: blur(2px);
+    }
+    .container{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+    .container .nav_bar{
+        display: flex;
+        top: 0;
+        left: 0;
+        position: absolute;
+        width: 100%;
+        justify-content:flex-end ;
+        
+        
+    }
+    .container .nav_bar a {
+        padding: 10px;
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        font-size: 50px;
+        font-weight: 700;
+        margin: 0 20px;
+    }
+    .container .header_txt{
+        position: absolute;
+        text-align: center;
+        margin: auto ;
+        top:280px;
+    }
+    
+    .container .action {
+        
+        position: absolute;
+        display: flex;
+        margin: auto ;
+    }
+    .action {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+        align-content: center;
+        
+        
+    }
+    .action a{
+        border: 2px solid rgb(212, 163, 57);
+        
+        padding: 30px 50px;
+        border-radius: 200px;
+        font-size: 50px;
+        text-decoration: none;
+        color: rgb(163, 163, 163);
+        background: #777;
+        opacity: .4;
+    }
+    .action a:hover{
+        opacity: 1;
+    }
+    .wr_1{
+        background-color: #eee;
+        color: #777;
+    }
+    .inner{
+        padding: 20px;
+        margin: 30px auto;
+        
+
+    }
+    .inner .pic{
+        width: 50%;
+    }
+    .inner .pic img{
+        width: 100%;
+        height: 100%;
+    }
+    .inner .content{
+        padding-left: 25px;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .inner .content h3{
+        font-size: 100px;
+        font-weight: 700px;
+        padding-bottom: 20px;
+    }
+    .inner .content p{
+        line-height: 3em;
+        color: #000;
+    }
+    .inner .content .btn{
+        border:1px solid rgb(65, 131, 122);
+        text-decoration: none;
+        color: #fff;
+        background-color: cadetblue;
+        line-height: 1.5em;
+        padding: 0 1em;
+        align-self: flex-end;
+        margin-right: 20px;
+        border-radius: 200px;
+    }
+
+    .inner .feture_right {
+        width: 1200px;
+        height: 500px;
+        display: flex;
+        /* border: 2px solid #111; */
+        
+        margin: auto;
+        background-color: yellowgreen;
+        margin-bottom: 50px;
+       
+        
+    }
+    .inner .feture_left {
+        display: flex;
+        border: 2px solid #111;
+    }
+    .wr_2 .inner .major_header{
+        text-align: center;
+    }
+    .wr_2 .major_header h2{
+        font-size: 50px;
+        font-weight: 600;
+    }
+    .wr_2 .inner .major_header p{
+        line-height: 2em;
+        margin: 10px auto;
+    }
+    .wr_2{
+        width: 1200px;
+        margin: auto;    
+    }
+
+    .wr_2 .inner{
+        
+        display: flex;
+        flex-direction: column;
+        
+
+    }
+    .wr_2 .inner .mu_img{
+        text-align: center;
+        width: 100%;
+        margin: 0 auto;
+        vertical-align: middle;
+        /* background-color: chocolate; */
+        
+    }
+    .wr_3{
+        width: 1200px;
+        margin: auto;
+        
+    }
+    .wr_3 .inner{
+        background-color: rgb(17, 28, 48);
+    }
+    .wr_3 .major_narrow{
+        text-align: center;
+    }
+    .wr_3 .major_narrow h2{
+        color: cornsilk;
+        text-transform: uppercase;
+        font-weight: 500;
+    }
+    .wr_3 .major_narrow p{
+        color: cornsilk;
+        margin-bottom: 30px;
+    }
+    .wr_3 .group{
+        width: 100%;
+        
+    }
+    .wr_3 .name_email{
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+    }
+    .wr_3 .name_email input{
+        width: 560px;
+        height: 30px;
+        display: flex;
+        
+    }
+    .wr_3 .group textarea{
+        background-color: chocolate;
+        width: 100%;
+        height: 100px;
+        margin-top:20px;
+       
+    }
+
+   
+
+   
+   
+   
+    
+</style>
+<body>
+    <div class="wrap">
+        <div class="container">
+            <div class="bg"></div>
+            <div class="bg_blur"></div>
+            <nav class="nav_bar">
+                <a href="#">topic</a>
+                <a href="#">About me</a>
+                <a href="#">shoppingCart</a>
+                <a href="#">topic</a>
+            </nav>
+            <div class="header_txt">
+                <h1>Chrislinlin_1113</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam, at.</p>
+            </div>
+            <div class="action">
+                <a href="#">learn more</a>
+            </div>
+
+        </div>
+        <section class="wr_1">
+            <div class="inner">
+                <article class="feture_right">
+                    <div class="content">
+                        <h3>ABC</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis dicta quaerat minus, ab veritatis tenetur quod in, perspiciatis id blanditiis sed nihil mollitia sequi non cupiditate! Harum atque qui asperiores.</p>
+                        <a href="#" class="btn">more</a>
+                    </div>
+                    <span class="pic">
+                        <img src="https://picsum.photos/id/684/700/400" alt="">
+                    </span>
+                    
+                </article>
+                <article class="feture_right">
+                    <span class="pic">
+                        <img src="https://picsum.photos/id/683/600/400" alt="">
+                    </span>
+                    <div class="content">
+                        <h3>ABC</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus iusto, culpa in ex debitis maxime repellat architecto voluptatem praesentium laudantium?</p>
+                        <a href="#" class="btn">more</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <section class="wr_2">
+            <div class="inner">
+                <header class="major_header">
+                    <h2>aaaaaaaaaaaa</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus dolore distinctio explicabo labore aperiam rerum et quia possimus saepe, sit laboriosam mollitia suscipit ad necessitatibus quos quas quaerat, aspernatur atque?</p>
+                </header>
+                <div class="mu_img">
+                    <a href="#" class="image">
+                        <img src="https://picsum.photos/id/681/300/300" alt="">
+                    </a>
+                    <a href="#" class="image">
+                        <img src="https://picsum.photos/id/682/300/300" alt="">
+                    </a>
+                    <a href="#" class="image">
+                        <img src="https://picsum.photos/id/683/300/300" alt="">
+                    </a>
+                    <a href="#" class="image">
+                        <img src="https://picsum.photos/id/684/300/300" alt="">
+                    </a>
+                    <a href="#" class="image">
+                        <img src="https://picsum.photos/id/685/300/300" alt="">
+                    </a>
+                    <a href="#" class="image">
+                        <img src="https://picsum.photos/id/686/300/300" alt="">
+                    </a>
+                </div>
+                <div class="action">
+                    <a href="#" class="button big">learn more</a>
+                </div>
+
+
+            </div>
+        </section>
+        <section class ="wr_3">
+            <div class="inner">
+                <header class="major_narrow">
+                    <h2>get in touch</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste modi assumenda magni culpa obcaecati totam eligendi corrupti laborum quod earum?</p>
+                </header>
+                <div class="group">
+                    <div class="name_email">
+                        <input name="name" type="text" placeholder="name">
+                        <input name="email" type="text" placeholder="email">
+                    </div>
+                    <div class="message">
+                        <textarea name="message" placeholder="message" rows="4">
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+
+    </div>
+    
+</body>
+</html>
